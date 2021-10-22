@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cd0b130ab5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>Creature List</title>
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-ghost text-primary"></i> Creature<span class="text-primary">List</span></h1>
+      <form id="creature-form">
+        <div class="form-group mt-2">
+          <label for="name">Name of the Creature</label>
+          <input type="text" id="name" class="form-control mt-2">
+        </div>
+        <div class="form-group mt-2">
+          <label for="creator">The Creator</label>
+          <input type="text" id="creator" class="form-control mt-2">
+        </div>
+        <div class="form-group mt-2">
+          <label for="code">Creature Code</label>
+          <input type="text" id="code" class="form-control mt-2">
+        </div>
+        <input type="submit" value="Add Creature" class="btn btn-primary btn-block mt-2">
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Name of the Creature</th>
+            <th>The Creator</th>
+            <th>Creature Code</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="creature-list"></tbody>
+      </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
